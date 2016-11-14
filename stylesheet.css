@@ -9,3 +9,8 @@ body {
 	margin: 0 auto;
    	width: 500px; /* O que esse atributo está fazendo? */
 }
+
+#sobre {
+	text-align: justify;
+	text-indent: 3em;
+}
