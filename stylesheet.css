@@ -1,0 +1,11 @@
+#foto_de_perfil {
+	border-radius: 500px;
+	display: block; /* Como funciona esse atributo? */
+    	margin-left: auto;
+    	margin-right: auto
+}
+
+body {   
+	margin: 0 auto;
+   	width: 500px; /* O que esse atributo está fazendo? */
+}
