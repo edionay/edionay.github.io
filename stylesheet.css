@@ -5,6 +5,9 @@
     	margin-right: auto
 }
 
+p {
+	font-family: Ubuntu;
+}
 body {   
 	font-family: Ubuntu;
 	margin: 0 auto;
