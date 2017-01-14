@@ -11,7 +11,7 @@ p {
 body {   
 	font-family: Ubuntu;
 	margin: 0 auto;
-   	width: 500px; /* O que esse atributo est· fazendo? */
+   	max-width: 500px; /* O que esse atributo est√° fazendo? */
 }
 
 #sobre {
