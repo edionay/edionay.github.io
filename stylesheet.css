@@ -11,7 +11,7 @@ p {
 body {   
 	font-family: Ubuntu;
 	margin: 0 auto;
-   	max-width: 500px; /* O que esse atributo está fazendo? */
+   	max-width: 1000px; /* O que esse atributo está fazendo? */
 }
 
 #sobre {
@@ -24,6 +24,7 @@ body {
 #entrada_de_texto {
     display: block;
     margin: 0 auto;
+	max-width: 1000px;
 }
 
 #conteudo_centralizado {
@@ -34,6 +35,7 @@ body {
 #pre_visualizacao {
     font-size: 15pt;
 	font-family: Ubuntu;
+	max-width: 1000px;
 
 }
 
