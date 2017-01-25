@@ -20,6 +20,7 @@ body {
 }
 
 
+
 #entrada_de_texto {
     display: block;
     margin: 0 auto;
@@ -32,6 +33,8 @@ body {
 
 #pre_visualizacao {
     font-size: 15pt;
+	font-family: Ubuntu;
+
 }
 
 #titulo_negrito {
