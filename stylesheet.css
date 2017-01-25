@@ -1,4 +1,4 @@
-#foto_de_perfil {
+﻿#foto_de_perfil {
 	border-radius: 500px;
 	display: block; /* Como funciona esse atributo? */
     	margin-left: auto;
@@ -17,4 +17,31 @@ body {
 #sobre {
 	text-align: justify;
 	text-indent: 3em;
+}
+
+
+#entrada_de_texto {
+    display: block;
+    margin: 0 auto;
+}
+
+#conteudo_centralizado {
+    display: table;
+    margin: 0 auto;
+}
+
+#pre_visualizacao {
+    font-size: 15pt;
+}
+
+#titulo_negrito {
+    font-weight: bold; 
+
+}
+#titulo_italico {
+    font-style: italic;
+}
+
+#titulo_sublinhado {
+    text-decoration: underline;
 }
