@@ -49,6 +49,13 @@ sublinhado.addEventListener("click", function() {
     }
 })
 
+var corDaFonte = document.getElementById('cores');
+corDaFonte.addEventListener("change", function() {
+    var previa = document.getElementById('pre_visualizacao');
+    previa.style.color = corDaFonte.value;
+})
+
+
 
 window.addEventListener("load", function() {
             console.log("Bem-vindo(a)!");
