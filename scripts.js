@@ -9,6 +9,7 @@ botaoDePrevia.onclick = function() {
     }
 }*/
 
+/*
 var texto = document.getElementById('entrada_de_texto');
 texto.addEventListener("keyup", function () {
     var previa = document.getElementById('pre_visualizacao');
@@ -55,9 +56,25 @@ corDaFonte.addEventListener("change", function() {
     previa.style.color = corDaFonte.value;
 })
 
+*/
 
 
 window.addEventListener("load", function() {
             console.log("Bem-vindo(a)!");
+
+            iniciarContador();
+            
         }
 );
+
+
+function iniciarContador() {
+    var contador = document.getElementById("contador");
+    for (var i = 0; i < 5; i++) {
+        setTimeout(function() {
+                console.log(i);
+                contador.innerText = i;
+            }, 1000*i
+        )   
+    }
+}

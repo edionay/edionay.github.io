@@ -6,7 +6,6 @@
     <meta name="theme-color" content="#333" />
     <link type="text/css" rel="stylesheet" href="stylesheet.css" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
     <meta http-equiv="content-type" content="text/html" ; charset="utf-8" />
 
 </head>
@@ -17,8 +16,24 @@
 <a href="linhadotempo.html"><img src="imagem/linha_do_tempo.png" alt="Linha do tempo" /></a>
 <a href="lab.html"><img src="imagem/lab.png" alt="Laboratório" /></a>
 <a href="contato.html"><img src="imagem/contato.png" alt="Contato" /></a>
+<div id="conteudo_centralizado">
+    <textarea id="entrada_de_texto" autocomplete="off" autofocus placeholder="Digite seu texto aqui..." rows="5" cols="100"></textarea>
 
-<p id="contador">Edionay Aguiar</p>
+    <label id="titulo_negrito"><input id="caixa_negrito" autocomplete="off" type="checkbox">Negrito</label>
+    <label id="titulo_italico"><input id="caixa_italico" autocomplete="off" type="checkbox">Itálico</label>
+    <label id="titulo_sublinhado"><input id="caixa_sublinhado" autocomplete="off" type="checkbox">Sublinhado</label>
+
+    <select id="cores" autocomplete="off">
+        <option value="black">Preto</option>
+        <option value="pink">Rosa</option>
+        <option value="green">Verde</option>
+        <option value="blue">Azul</option>
+        <option value="orange">Laranja</option>
+    </select>
+    
+    <pre id="pre_visualizacao">A prévia do seu texto aparecerá aqui...</pre>
+
+</div>
 
 </body>
 
