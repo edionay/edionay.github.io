@@ -60,12 +60,12 @@ corDaFonte.addEventListener("change", function() {
 window.addEventListener("load", function() {
             console.log("Bem-vindo(a)!");
 
-            iniciarContador();
+//            iniciarContador();
             
         }
 );
 
-
+/*
 function iniciarContador() {
     var contador = document.getElementById("contador");
     for (var i = 0; i < 5; i++) {
@@ -76,3 +76,4 @@ function iniciarContador() {
         )   
     }
 }
+*/
