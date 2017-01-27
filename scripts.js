@@ -1,4 +1,4 @@
-/*var botaoDePrevia = document.getElementById('botao_de_previa');
+var botaoDePrevia = document.getElementById('botao_de_previa');
 
 botaoDePrevia.onclick = function() {
     var texto = document.getElementById('entrada_de_texto');
@@ -7,9 +7,8 @@ botaoDePrevia.onclick = function() {
     if (texto.value !== '') {
         previa.innerText = texto.value
     }
-}*/
+}
 
-/*
 var texto = document.getElementById('entrada_de_texto');
 texto.addEventListener("keyup", function () {
     var previa = document.getElementById('pre_visualizacao');
@@ -56,7 +55,6 @@ corDaFonte.addEventListener("change", function() {
     previa.style.color = corDaFonte.value;
 })
 
-*/
 
 
 window.addEventListener("load", function() {
