@@ -1,15 +1,23 @@
 ﻿#foto_de_perfil {
 	border-radius: 100px;
 	display: block; /* Como funciona esse atributo? */
-    	margin-left: auto;
-    	margin-right: auto
+    margin-left: auto;
+    margin-right: auto
+}
+
+article {
+	display: block;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
 }
 
 #barra-de-menu {
 	background: black;
-	background: -webkit-linear-gradient(black 0%, black 50%, #000000 50%, white 50%, white 100%);
-	background: -o-linear-gradient(black 0%, black 50%, #000000 50%, white 50%, white 100%);
-	background: linear-gradient(black 0%, black 50%, #000000 50%, white 50%, white 100%);
+	background: -webkit-linear-gradient(black 0%, black 72%, #000000 50%, white 50%, white 100%);
+	background: -o-linear-gradient(black 0%, black 72%, #000000 50%, white 50%, white 100%);
+	background: linear-gradient(black 0%, black 72%, #000000 50%, white 50%, white 100%);
 }
 
 .material-icons {
@@ -30,8 +38,6 @@ p {
 }
 body {   
 	font-family: Ubuntu;
-	margin: 0 auto;
- /* O que esse atributo está fazendo? */
 }
 
 #sobre {
@@ -44,7 +50,7 @@ body {
 #entrada_de_texto {
     display: block;
     margin: 0 auto;
-	max-width: 1000px;
+	width: 100%;
 }
 
 #conteudo_centralizado {
