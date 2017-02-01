@@ -1,8 +1,28 @@
 ﻿#foto_de_perfil {
-	border-radius: 500px;
+	border-radius: 100px;
 	display: block; /* Como funciona esse atributo? */
     	margin-left: auto;
     	margin-right: auto
+}
+
+#barra-de-menu {
+	background: black;
+	background: -webkit-linear-gradient(black 0%, black 50%, #000000 50%, white 50%, white 100%);
+	background: -o-linear-gradient(black 0%, black 50%, #000000 50%, white 50%, white 100%);
+	background: linear-gradient(black 0%, black 50%, #000000 50%, white 50%, white 100%);
+}
+
+.material-icons {
+	background-color: black;
+	color: white;
+	border-radius: 100%;
+	border-style: solid;
+	border-color: black;
+	border-width: 10px;
+}
+
+.material-icons.md-48 {
+	font-size: 48px;
 }
 
 p {
@@ -11,7 +31,7 @@ p {
 body {   
 	font-family: Ubuntu;
 	margin: 0 auto;
-   	max-width: 800px; /* O que esse atributo está fazendo? */
+ /* O que esse atributo está fazendo? */
 }
 
 #sobre {
@@ -34,7 +54,7 @@ body {
 
 #pre_visualizacao {
     font-size: 15pt;
-    font-family: 'Ubuntu', sans-serif;
+	font-family: Ubuntu;
 	max-width: 1000px;
 
 }
@@ -49,12 +69,4 @@ body {
 
 #titulo_sublinhado {
     text-decoration: underline;
-}
-
-
-#contador {
-    font-family: 'Ubuntu Mono', monospace;
-	font-size: 100pt;
-	text-align: center;
-
 }
