@@ -1,14 +1,4 @@
-/*var botaoDePrevia = document.getElementById('botao_de_previa');
 
-botaoDePrevia.onclick = function() {
-    var texto = document.getElementById('entrada_de_texto');
-    var previa = document.getElementById('pre_visualizacao');
-
-    if (texto.value !== '') {
-        previa.innerText = texto.value
-    }
-}
-*/
 var texto = document.getElementById('entrada_de_texto');
 texto.addEventListener("keyup", function () {
     var previa = document.getElementById('pre_visualizacao');
@@ -58,22 +48,17 @@ corDaFonte.addEventListener("change", function() {
 
 
 window.addEventListener("load", function() {
-            console.log("Bem-vindo(a)!");
+        console.log("Bem-vindo(a)!");
 
-//            iniciarContador();
-            
-        }
-);
+        firebase.auth().signInAnonymously().catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            // ...
+        });
 
-/*
-function iniciarContador() {
-    var contador = document.getElementById("contador");
-    for (var i = 0; i < 5; i++) {
-        setTimeout(function() {
-                console.log(i);
-                contador.innerText = i;
-            }, 1000*i
-        )   
-    }
-}
-*/
+        var totalDeVisitas = firebase.database().ref('contador');
+        totalDeVisitas.on('value', function(snapshot) {
+                console.log(snapshot.val());
+        });
+    });

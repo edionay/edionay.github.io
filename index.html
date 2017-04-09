@@ -1,6 +1,24 @@
 ﻿<!DOCTYPE html>
 <html>
 	<head>
+		
+		<script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+		<script>
+			// Initialize Firebase
+			var config = {
+				apiKey: "AIzaSyDj-UDV4cJqqHJtHDQCbDTKgh_tUErGh2k",
+				authDomain: "contador-de-acessos-em-site.firebaseapp.com",
+				databaseURL: "https://contador-de-acessos-em-site.firebaseio.com",
+				projectId: "contador-de-acessos-em-site",
+				storageBucket: "contador-de-acessos-em-site.appspot.com",
+				messagingSenderId: "1082869795279"
+			};
+			firebase.initializeApp(config);
+			
+ 			 // Get a reference to the database service
+ 			 var database = firebase.database();
+		</script>
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="theme-color" content="#333" />
 		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
@@ -21,7 +39,12 @@
 	<article>
         <img id="foto_de_perfil" src="imagem/perfil.jpg" alt="Edionay tem cabelo levemente alto, encaracolado, barbudo, veste uma camisa verde e está usando uma mochila.">
 	<h1 style="text-align: center">Edionay Aguiar</h1>
-        <p id="sobre">Brasileiro, paraense e adotado por Goiânia-GO, Edionay estuda Engenharia de Software na Universidade Federal de Goiás (UFG), é morador da Casa de Estudantes Universitários e bolsista no <a href="http://acessibilidade.ufg.br">Núcleo de Acessibilidade da UFG</a>, onde trabalha com <a href="https://pt.wikipedia.org/wiki/Tecnologia_assistiva">tecnologias assistivas</a> e usa este domínio para aplicar seus conhecimentos e experiência adiquirida na área.</p>
+        <p id="sobre">Brasileiro, paraense e adotado por Goiânia-GO, Edionay estuda 
+			Engenharia de Software na Universidade Federal de Goiás (UFG), é morador da 
+			Casa de Estudantes Universitários e bolsista no <a href="http://acessibilidade.ufg.br">
+			Núcleo de Acessibilidade da UFG</a>, onde trabalha com <a href="https://pt.wikipedia.org/wiki/Tecnologia_assistiva">
+			tecnologias assistivas</a> e usa este domínio para aplicar seus conhecimentos e experiência adiquirida na área.</p>
+		<p id="visitas"></p>
 	</article>
 	</body>
 </html>
