@@ -1,29 +1,13 @@
 ﻿<!DOCTYPE html>
 <html>
 	<head>
-		
-		<script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
-		<script>
-			// Initialize Firebase
-			var config = {
-				apiKey: "AIzaSyDj-UDV4cJqqHJtHDQCbDTKgh_tUErGh2k",
-				authDomain: "contador-de-acessos-em-site.firebaseapp.com",
-				databaseURL: "https://contador-de-acessos-em-site.firebaseio.com",
-				projectId: "contador-de-acessos-em-site",
-				storageBucket: "contador-de-acessos-em-site.appspot.com",
-				messagingSenderId: "1082869795279"
-			};
-			firebase.initializeApp(config);
-			
- 			 // Get a reference to the database service
- 			 var database = firebase.database();
-		</script>
-
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="theme-color" content="#333" />
 		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    	<script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+		<script type="text/javascript" src="contadorDeVisitas.js"></script>
 
 		<title>Página do Edionay</title>
 	</head>
@@ -44,7 +28,9 @@
 			Casa de Estudantes Universitários e bolsista no <a href="http://acessibilidade.ufg.br">
 			Núcleo de Acessibilidade da UFG</a>, onde trabalha com <a href="https://pt.wikipedia.org/wiki/Tecnologia_assistiva">
 			tecnologias assistivas</a> e usa este domínio para aplicar seus conhecimentos e experiência adiquirida na área.</p>
-		<p id="visitas"></p>
+		<p></p>
+		<p id="visitas">Acesso: ...</p>
+
 	</article>
 	</body>
 </html>

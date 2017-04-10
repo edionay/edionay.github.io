@@ -39,26 +39,6 @@ sublinhado.addEventListener("click", function() {
     }
 })
 
-var corDaFonte = document.getElementById('cores');
-corDaFonte.addEventListener("change", function() {
-    var previa = document.getElementById('pre_visualizacao');
-    previa.style.color = corDaFonte.value;
-})
-
-
-
 window.addEventListener("load", function() {
         console.log("Bem-vindo(a)!");
-
-        firebase.auth().signInAnonymously().catch(function(error) {
-            // Handle Errors here.
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            // ...
-        });
-
-        var totalDeVisitas = firebase.database().ref('contador');
-        totalDeVisitas.on('value', function(snapshot) {
-                console.log(snapshot.val());
-        });
     });
