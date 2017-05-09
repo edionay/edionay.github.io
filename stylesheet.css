@@ -1,78 +1,23 @@
-﻿#foto_de_perfil {
-	border-radius: 100px;
-	display: block; /* Como funciona esse atributo? */
-    margin-left: auto;
-    margin-right: auto
+﻿body {
+	margin: 0;
+	padding: 0;
+	font-family: Ubuntu;
+	background: 
 }
 
-article {
-	display: block;
-	max-width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 1%;
-}
-
-#barra-de-menu {
+#barra-de-navegacao {
 	background: black;
-	background: -webkit-linear-gradient(black 0%, black 72%, #000000 50%, white 50%, white 100%);
-	background: -o-linear-gradient(black 0%, black 72%, #000000 50%, white 50%, white 100%);
-	background: linear-gradient(black 0%, black 72%, #000000 50%, white 50%, white 100%);
-}
-
-.material-icons {
-	background-color: black;
+	height: 45px;
 	color: white;
-	border-radius: 100%;
-	border-style: solid;
-	border-color: black;
-	border-width: 10px;
 }
 
-.material-icons.md-48 {
-	font-size: 48px;
+#logo {
+	float: left;
+	text-decoration: none;
+	color: white;
 }
 
-p {
-	font-family: Ubuntu;
-}
-body {   
-	font-family: Ubuntu;
-}
-
-#sobre {
-	text-align: justify;
-	text-indent: 3em;
-}
-
-
-
-#entrada_de_texto {
-    display: block;
-    margin: 0 auto;
-	width: 100%;
-}
-
-#conteudo_centralizado {
-    display: table;
-    margin: 0 auto;
-}
-
-#pre_visualizacao {
-    font-size: 15pt;
-	font-family: Ubuntu;
-	max-width: 1000px;
-
-}
-
-#titulo_negrito {
-    font-weight: bold; 
-
-}
-#titulo_italico {
-    font-style: italic;
-}
-
-#titulo_sublinhado {
-    text-decoration: underline;
+#opcoes-de-navegacao {
+	float: right;
+	color: white;
 }
