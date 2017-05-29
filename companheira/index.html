@@ -1,98 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>aCompanheiro</title>
+    <title>Companheiro</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="estilo.css" rel="stylesheet">
+    <link href="login.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-      <main class="container">
-          <div class="row">
-                       <div class=" col-sm-2 ">
-   
-          </div>         <div class="col-sm-8 page-header">
-              <h1>Tarefas</h1>
-          </div>
-         </div>
-         
-          <div class="row">
+</head>
+<body>
+<main class="container">
+    <div class="row main col-md-12">
 
-        <nav class="nav col-sm-2">
-             <ul class="nav nav-pills nav-stacked">
-                <li role="presentation" class="active"><a href="index.html">Tarefas</a></li>
-              <li role="presentation"><a href="discentes.html">Discentes</a></li>
-               <li role="presentation"><a href="#">Relatórios</a></li>
-            </ul>
-        </nav>
+        <div id="corpo-login" class="main-login main-center">
+            <form class="form-horizontal" method="post" action="#">
+                <h1 class="title">Companheira</h1>
 
-        <div class="col-sm-10">
-              <table class="table table-striped">
-                  <tr>
-                      <th>Título</th>
-                      <th>Discente</th>
-                      <th>Solicitação</th>
-                      <th>Prazo</th>
-                      <th>Responsável</th>
-                      <th>Estado</th>
-                  </tr>
-                  <tr>
-                      <td>Alfabetização Fônica Computadorizada</td>
-                      <td>Tálita Serafim</td>
-                      <td>16/03/2017</td>
-                      <td>01/05/2017</td>
-                      <td>Edionay</td>
-                      <td>Atrasado</td>
-                  </tr>
-                  <tr>
-                      <td>Alfabetização Fônica Computadorizada</td>
-                      <td>Tálita Serafim</td>
-                      <td>16/03/2017</td>
-                      <td>01/05/2017</td>
-                      <td>Edionay</td>
-                      <td>Atrasado</td>
-                  </tr>
-                  <tr>
-                      <td>Alfabetização Fônica Computadorizada</td>
-                      <td>Tálita Serafim</td>
-                      <td>16/03/2017</td>
-                      <td>01/05/2017</td>
-                      <td>Edionay</td>
-                      <td>Atrasado</td>
-                  </tr>
-                  <tr>
-                      <td>Alfabetização Fônica Computadorizada</td>
-                      <td>Tálita Serafim</td>
-                      <td>16/03/2017</td>
-                      <td>01/05/2017</td>
-                      <td>Edionay</td>
-                      <td>Atrasado</td>
-                  </tr>
+                <div class="form-group">
+                    <label for="email" class="control-label">E-mail</label>
+                    <div class="cols-md-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="email" id="email"
+                                   placeholder="digite seu e-mail"/>
+                        </div>
+                    </div>
+                </div>
 
-            </table>
+                <div class="form-group">
+                    <label for="senha" class="control-label">Senha</label>
+                    <div class="cols-md-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="email" id="senha"
+                                   placeholder="Digite sua senha"/>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group ">
+                    <a href="tarefas.html"><button type="button" class="btn btn-primary btn-lg btn-block login-button">Login</button></a>
+                </div>
+                <div class="login-register">
+                    <a href="index.php">Esqueci minha senha</a>
+                </div>
+            </form>
         </div>
-          </div>
-      </main>
+    </div>
+</main>
 
-
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-  </body>
+</body>
 </html>
