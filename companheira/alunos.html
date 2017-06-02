@@ -17,7 +17,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <title>Tarefas</title>
+    <title>Alunos</title>
 
 </head>
 <body>
@@ -55,133 +55,125 @@
 
     <div class="col s12 l10">
         <div class="">
-            <h2>Tarefas
-                <a class="waves-effect waves-light btn pink accent-1 right btn-large" href="#modal-nova-tarefa">
-                    <i class="material-icons left">text_fields</i>Nova tarefa</a>
+            <h2>Alunos
+                <a class="waves-effect waves-light btn pink accent-1 right btn-large" href="#modal-novo-aluno">
+                    <i class="material-icons left">person_add</i>Novo aluno</a>
             </h2>
         </div>
         <div class="divider"></div>
 
-        <table class="responsive-table striped">
+        <table class="striped responsive-table">
             <thead>
             <tr>
-                <th>Título</th>
-                <th>Aluno</th>
-                <th>Solicitação</th>
-                <th>Prazo</th>
-                <th>Responsável</th>
-                <th>Estado</th>
+                <th>Nome</th>
+                <th>Matrícula</th>
+                <th>Curso</th>
+                <th>E-mail</th>
+                <th>Telefone 1</th>
+                <th>Telefone 2</th>
                 <th>Ações</th>
             </tr>
             </thead>
-            <tbody id="dados-de-tarefas">
-            <tr id="l01">
-                <td>Alfabetização Fônica Computadorizada</td>
-                <td>Tálita Serafim</td>
-                <td>16/03/2017</td>
-                <td>01/05/2017</td>
-                <td>Pablo</td>
-                <td>Atrasado</td>
+            <tbody id="dados-de-alunos">
+            <tr>
+                <td>Edionay Aguiar</td>
+                <td>12345678</td>
+                <td>Engenharia de Software</td>
+                <td>teste@exemplo.com</td>
+                <td>(55)99999999</td>
+                <td>(55)99999999</td>
                 <td>
-                    <a class="waves-effect waves-light btn pink accent-1 btn tooltipped" data-position="top"
-                       data-delay="50" data-tooltip="Visualizar">
-                        <i class="material-icons">remove_red_eye</i></a>
-                    <a class="waves-effect waves-light btn pink accent-1 btn tooltipped" data-position="top"
-                       data-delay="50" data-tooltip="Excluir" onclick="return excluirTarefa('l01')">
-                        <i class="material-icons">delete</i></a>
-                    <a class="waves-effect waves-light btn pink accent-1 btn tooltipped" data-position="top"
-                       data-delay="50" data-tooltip="Assumir tarefa">
-                        <i class="material-icons">pan_tool</i></a>
+                        <a class="waves-effect waves-light btn pink accent-1 btn tooltipped" data-position="top"
+                           data-delay="50" data-tooltip="Visualizar" href="perfil/perfil1.html">
+                            <i class="material-icons">remove_red_eye</i></a>
+                        <a class="waves-effect waves-light btn pink accent-1 btn tooltipped" data-position="top"
+                           data-delay="50" data-tooltip="Enviar e-mail">
+                            <i class="material-icons">mail</i></a>
+                        <a class="waves-effect waves-light btn pink accent-1 btn tooltipped" data-position="top"
+                           data-delay="50" data-tooltip="Excluir">
+                            <i class="material-icons">delete</i></a>
                 </td>
             </tr>
-            <tr id="l02">
-                <td>Alfabetização Fônica Computadorizada</td>
+            <tr>
                 <td>Tálita Serafim</td>
-                <td>16/03/2017</td>
-                <td>01/05/2017</td>
-                <td>Pablo</td>
-                <td>Atrasado</td>
+                <td>22345679</td>
+                <td>Letras - Português</td>
+                <td>teste@exemplo.com</td>
+                <td>(55)99999999</td>
+                <td>(55)99999999</td>
                 <td>
                     <a class="waves-effect waves-light btn pink accent-1 btn tooltipped" data-position="top"
-                       data-delay="50" data-tooltip="Visualizar">
+                       data-delay="50" data-tooltip="Visualizar" href="perfil/perfil2.html">
                         <i class="material-icons">remove_red_eye</i></a>
                     <a class="waves-effect waves-light btn pink accent-1 btn tooltipped" data-position="top"
-                       data-delay="50" data-tooltip="Excluir" onclick="return excluirTarefa('l02')">
-                        <i class="material-icons">delete</i></a>
-                    <a class="waves-effect waves-light btn pink accent-1 btn tooltipped" data-position="top"
-                       data-delay="50" data-tooltip="Assumir tarefa">
-                        <i class="material-icons">pan_tool</i></a>
-                </td>
-            </tr>
-            <tr id="l03">
-                <td>Alfabetização Fônica Computadorizada</td>
-                <td>Tálita Serafim</td>
-                <td>16/03/2017</td>
-                <td>01/05/2017</td>
-                <td>Pablo</td>
-                <td>Atrasado</td>
-                <td>
-                    <a class="waves-effect waves-light btn pink accent-1 btn tooltipped" data-position="top"
-                       data-delay="50" data-tooltip="Visualizar">
-                        <i class="material-icons">remove_red_eye</i></a>
+                       data-delay="50" data-tooltip="Enviar e-mail">
+                        <i class="material-icons">mail</i></a>
                     <a class="waves-effect waves-light btn pink accent-1 btn tooltipped" data-position="top"
                        data-delay="50" data-tooltip="Excluir">
-                        <i class="material-icons" onclick="return excluirTarefa('l03')">delete</i></a>
-                    <a class="waves-effect waves-light btn pink accent-1 btn tooltipped" data-position="top"
-                       data-delay="50" data-tooltip="Assumir tarefa">
-                        <i class="material-icons">pan_tool</i></a>
+                        <i class="material-icons">delete</i></a>
                 </td>
             </tr>
-            <tr id="l04">
-                <td>Alfabetização Fônica Computadorizada</td>
-                <td>Tálita Serafim</td>
-                <td>16/03/2017</td>
-                <td>01/05/2017</td>
-                <td>Pablo</td>
-                <td>Atrasado</td>
+            <tr>
+                <td>Pablo Almeida</td>
+                <td>55678905</td>
+                <td>Música</td>
+                <td>teste@exemplo.com</td>
+                <td>(55)99999999</td>
+                <td>(55)99999999</td>
                 <td>
                     <a class="waves-effect waves-light btn pink accent-1 btn tooltipped" data-position="top"
-                       data-delay="50" data-tooltip="Visualizar">
+                       data-delay="50" data-tooltip="Visualizar" href="perfil/perfil3.html">
                         <i class="material-icons">remove_red_eye</i></a>
                     <a class="waves-effect waves-light btn pink accent-1 btn tooltipped" data-position="top"
-                       data-delay="50" data-tooltip="Excluir"  onclick="return excluirTarefa('l04')">
-                        <i class="material-icons">delete</i></a>
+                       data-delay="50" data-tooltip="Enviar e-mail">
+                        <i class="material-icons">mail</i></a>
                     <a class="waves-effect waves-light btn pink accent-1 btn tooltipped" data-position="top"
-                       data-delay="50" data-tooltip="Assumir tarefa">
-                        <i class="material-icons">pan_tool</i></a>
+                       data-delay="50" data-tooltip="Excluir">
+                        <i class="material-icons">delete</i></a>
                 </td>
             </tr>
-
             </tbody>
-
         </table>
-
-
     </div>
 </div>
 
-<!-- Modal de nova tarefa -->
-<div id="modal-nova-tarefa" class="modal">
+<!-- Modal de novo aluno -->
+<div id="modal-novo-aluno" class="modal">
     <div class="modal-content">
-        <h5>Nova tarefa</h5>
+        <h5>Novo aluno</h5>
         <div class="divider"></div>
 
         <form class="col s12">
             <div class="row">
                 <div class="input-field col s12">
                     <i class="material-icons prefix">face</i>
-                    <input id="nome_aluno" type="tel" class="validate">
-                    <label for="nome_aluno">Nome do aluno</label>
+                    <input id="nome_completo" type="tel" class="validate">
+                    <label for="nome_completo">Nome completo</label>
                 </div>
                 <div class="input-field col s12">
-                    <i class="material-icons prefix">book</i>
-                    <input id="titulo" type="text" class="validate">
-                    <label for="titulo">Título do texto</label>
+                    <i class="material-icons prefix">fingerprint</i>
+                    <input id="matricula" type="text" class="validate">
+                    <label for="matricula">Matrícula</label>
                 </div>
                 <div class="input-field col s12">
-                    <i class="material-icons prefix">date_range</i>
-                    <input id="data-solicitacao" type="date" class="validate">
-                    <label for="data-solicitacao">Data de solicitação</label>
+                    <i class="material-icons prefix">school</i>
+                    <input id="curso" type="text" class="validate">
+                    <label for="curso">Curso</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">email</i>
+                    <input id="email" type="text" class="validate">
+                    <label for="curso">E-mail</label>
+                </div>
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="telefone1" type="tel" class="validate">
+                    <label for="telefone1">Telefone</label>
+                </div>
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="telefone2" type="tel" class="validate">
+                    <label for="telefone2">Telefone</label>
                 </div>
             </div>
         </form>
@@ -189,7 +181,7 @@
     <div class="modal-footer">
         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat pink accent-1 white-text"
-        onclick="return incluirTarefa()">Cadastrar</a>
+        onclick="return incluirAluno()">Cadastrar</a>
     </div>
 </div>
 
