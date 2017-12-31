@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav {
+    background-color: black;
+    height: 45px;
+}
+
+#logo {
+    color: white;
+    float: left;
+    padding: 5px 0;
+
+    
+}
+
+.area-principal {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+#menu {
+    float: right;
+    padding: 10px 0;
+}
+
+.item-do-menu {
+    padding: 5px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+a:visited {
+    color:gainsboro;
+}
+
+a:hover {
+    background: blueviolet;
+    border-radius: 10px;
+}
+
+.item {
+    background: white;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.data {
+    font-size: 14px;
+}
+
+.titulo-do-item {
+    font-size: 30px;
+    color: black;
+    display: block;
+}
