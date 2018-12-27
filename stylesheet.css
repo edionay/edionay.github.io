@@ -1,0 +1,57 @@
+﻿body {
+	margin: 0;
+	padding: 0;
+	font-family: Ubuntu;
+	background: gray;
+}
+
+#barra-de-navegacao {
+	background: black;
+	height: 45px;
+	color: white;
+	padding: 5px 10px;
+}
+
+#logo {
+	float: left;
+	text-decoration: none;
+	color: white;
+	padding: 10px 0;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+#gatinho {
+	display: block;
+	max-width: 50%;
+	height: auto;
+	margin: auto;
+}
+
+#mensagem {
+	text-align: center;
+}
+
+.opcoes-de-navegacao {
+	float: right;
+	list-style-type: none;
+}
+
+.item-de-navegacao {
+	color: white;
+	display: inline;
+	padding: 10px 0;
+	text-decoration: none;
+}
+
+.limite-principal {
+	max-width: 720px;
+	margin: 0 auto;
+}
+
+article {
+	max-width: 720px;
+	margin: 10px auto 10px auto;
+	background: white;
+	padding: 10px;
+}
