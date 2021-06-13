@@ -1,57 +1,77 @@
 ﻿body {
 	margin: 0;
 	padding: 0;
-	font-family: Ubuntu;
-	background: gray;
+	font-family: 'Montserrat', sans-serif;
+	color: #eef2ea;
+	background: #00324d;
 }
 
-#barra-de-navegacao {
-	background: black;
-	height: 45px;
-	color: white;
-	padding: 5px 10px;
+main {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-#logo {
-	float: left;
-	text-decoration: none;
-	color: white;
-	padding: 10px 0;
-	font-weight: bold;
-	font-size: 150%;
+#developer {
+	max-width: 500px;
 }
 
-#gatinho {
+#status {
+	font-size: 3.3em;
+	margin-bottom: 10px;
+}
+
+#horizontal_line {
+	width: 190px;
+	height: 4px;
+	background-color: #ba5a4c;
+}
+
+#credits {
+	position: fixed;
+    bottom: 0;
+    right: 0;
+	margin: 1em;
+}
+
+.credit {
 	display: block;
-	max-width: 50%;
-	height: auto;
-	margin: auto;
-}
-
-#mensagem {
-	text-align: center;
-}
-
-.opcoes-de-navegacao {
-	float: right;
-	list-style-type: none;
-}
-
-.item-de-navegacao {
-	color: white;
-	display: inline;
-	padding: 10px 0;
+	color: #ba5a4c;
 	text-decoration: none;
+	font-size: 0.6em;
+	margin-top: 5px;
+	font-weight: bold;
 }
 
-.limite-principal {
-	max-width: 720px;
-	margin: 0 auto;
+.credit:hover {
+	color: #ba5a4c;
+	text-decoration: underline;
+	font-weight: bold;
 }
 
-article {
-	max-width: 720px;
-	margin: 10px auto 10px auto;
-	background: white;
-	padding: 10px;
-}
+@media (orientation: portrait) {
+
+	main {
+		position: relative;
+	}
+
+	#developer {
+		margin: 3em 3em 0;
+	}
+
+	#status {
+		font-size: 1.6em;
+	}
+
+	#credits {
+		position: absolute;
+		font-size: 0.8em;
+		left: 0;
+	}
+
+	#horizontal_line {
+		width: 30vw;
+	}
+  }
