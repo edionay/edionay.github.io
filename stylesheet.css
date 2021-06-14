@@ -60,8 +60,7 @@ main {
 @media (orientation: portrait) {
 
 	#developer {
-		margin: 3em 3em 0;
-		width: 70vw;
+		width: 80vw;
 	}
 
 	#status {
