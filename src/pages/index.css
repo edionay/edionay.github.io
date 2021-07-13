@@ -1,0 +1,175 @@
+main {
+    height: 100vh;
+    background-color: "#003B73";
+	  color: white;
+	  font-family: "Roboto Mono, sans-serif, serif";
+    display: flex;
+    flex-direction: column;
+}
+
+/* Nav */
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Header */
+
+.header-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.cartoon-column {
+  width: 40%;
+}
+
+.cartoon {
+    height: 300px;
+    border-radius: 30px;
+    /* border: 1px solid; */
+}
+
+
+.name-title {
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.about-me-column {
+  width: 50%;
+}
+
+h2 {
+  text-align: left;
+  width: 100%;
+  font-weight: normal;
+  margin-left: 2em;
+  font-size: 1em;
+}
+
+.about-title {
+  width: -webkit-fill-available;
+  padding: 1em 0;
+}
+
+.about-me {
+  padding: 0 2em;
+}
+
+.tags {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0;
+  width: 100%;
+}
+
+.tag {
+  background-color: #FFFCA9;
+  color: black;
+  padding: 0.5em 1em;
+}
+
+.github-graph {
+  width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-link {
+    margin-left: 2em;
+}
+
+
+.social-link svg {
+    margin-right: 0.3em;
+}
+
+.nav-link {
+    margin-right: 3em;
+}
+
+
+
+a:visited {
+    color: white;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+  @media (orientation: portrait) {
+
+    main {
+      height: auto;
+    }
+
+    .header-container {
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    .name-title {
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    .about-me-column {
+      width: auto;
+      padding: 0 1em;
+    }
+
+    .about-me {
+      font-size: 0.9em;
+    }
+
+    .cartoon-column {
+      width: auto;
+    }
+
+    .cartoon {
+      height: 180px;
+    }
+
+    .tags {
+      flex-direction: column;
+    }
+
+    .tag {
+      margin: 1px;
+    }
+  }
